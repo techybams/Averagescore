@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>FirstScore<p id="firstscore"></p></div>
+    <div>SecondScore<p id="secondscore"></p></div>
+    <div>ThirdScore<p id="thirdscore"></p></div>
+    <div>FourthScore<p id="fourthscore"></p></div>
+    <div>FifthScore<p id="fifthscore"></p></div><br><br>
+    <div>Average Score
+    <p id="demo"></p>
+    </div>
+
+    <script>
+        let first = parseInt( prompt("Enter first score"));
+        document.getElementById("firstscore").innerHTML = first;
+
+        let second =parseInt( prompt("Enter second score"));
+        document.getElementById("secondscore").innerHTML = second;
+
+        let third =parseInt( prompt ("Enter third score"));
+        document.getElementById("thirdscore").innerHTML = third;
+
+        let fourth =parseInt( prompt ("Enter fourth score"));
+        document.getElementById("fourthscore").innerHTML = fourth;
+
+        let fifth =parseInt( prompt("enter fifth score"));
+        document.getElementById("fifthscore").innerHTML = fifth;
+
+        let total = first + second + third + fourth + fifth;
+        let average = total / 5;
+        
+        
+
+        document.getElementById("demo").innerHTML = average;
+
+    </script>
+</body>
+</html>
